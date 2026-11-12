@@ -33,15 +33,15 @@ Building this project requires JDK 25 (Fabric Loom 1.18.4 requirement). The prod
 gradle --no-daemon build
 ```
 
-The remapped mod is written to `build/libs/neonsnake-1.0.0.jar`.
+The remapped mod is written to `build/libs/neonsnake-1.0.1.jar`.
 
-GitHub Actions builds the project on pushes to `main`, pull requests, and manual workflow dispatches. The JAR is uploaded as the `neonsnake-1.0.0` workflow artifact.
+GitHub Actions builds the project on pushes to `main`, pull requests, and manual workflow dispatches. The JAR is uploaded as the `neonsnake-1.0.1` workflow artifact.
 
 ## Installation
 
 1. Install Fabric Loader for Minecraft 1.21.11.
 2. Install Fabric API for Minecraft 1.21.11.
-3. Put `neonsnake-1.0.0.jar` into the `.minecraft/mods` folder.
+3. Put `neonsnake-1.0.1.jar` into the `.minecraft/mods` folder.
 4. Launch the Fabric profile and run `/snake`.
 
 The mod is client-side and does not need to be installed on a server.
