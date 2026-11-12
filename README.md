@@ -27,7 +27,7 @@ A client-side cyberpunk Snake arcade for **Minecraft Java 1.21.11 + Fabric**.
 
 ## Build
 
-Requires JDK 21.
+Building this project requires JDK 25 (Fabric Loom 1.18.4 requirement). The produced mod targets Java 21 bytecode and runs on Minecraft's Java 21+ runtime.
 
 ```bash
 gradle --no-daemon build
