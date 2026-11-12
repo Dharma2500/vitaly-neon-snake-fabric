@@ -34,6 +34,6 @@ jobs:
       - name: Upload remapped mod JAR
         uses: actions/upload-artifact@v4
         with:
-          name: neonsnake-1.0.0
+          name: neonsnake-1.0.1
           path: build/libs/neonsnake-*.jar
           if-no-files-found: error
