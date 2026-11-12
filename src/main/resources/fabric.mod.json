@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "neonsnake",
+  "version": "${version}",
+  "name": "NEON SNAKE",
+  "description": "A cyberpunk Snake arcade game inside Minecraft.",
+  "authors": [
+    "Vitaly"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Dharma2500/vitaly-neon-snake-fabric",
+    "sources": "https://github.com/Dharma2500/vitaly-neon-snake-fabric"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.vitaly.neonsnake.NeonSnakeClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

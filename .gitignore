@@ -1,0 +1,13 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Local caches
+run/
+logs/

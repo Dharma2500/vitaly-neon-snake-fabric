@@ -1,5 +1,47 @@
 # NEON SNAKE
 
-A client-side cyberpunk Snake mini-game for Minecraft Java 1.21.11 (Fabric).
+A client-side cyberpunk Snake arcade for **Minecraft Java 1.21.11 + Fabric**.
 
-The project is being built. Run `/snake` in-game to open the arcade once the mod is installed.
+## Features
+
+- Open the arcade with `/snake`.
+- A centered neon interface with a 30 × 16 playfield and a local TOP-10 table.
+- Classic WASD / arrow-key steering with no instant 180-degree turns.
+- Smooth interpolation between grid cells.
+- Vanilla Minecraft block-item textures: sea lantern, prismarine bricks, redstone lamp and amethyst block. No custom block textures are bundled.
+- The field wraps at the edges.
+- Hitting the snake's own body sheds the tail section behind the impact point instead of ending the run.
+- Food is worth 10 points; temporary bonus crystals are worth 30.
+- Speed increases every 50 points, from 180 ms per move down to 65 ms.
+- ESC closes the screen and pauses the run. Reopen with `/snake` and press **ПРОДОЛЖИТЬ**.
+- Scores are stored locally in `.minecraft/config/neonsnake/leaderboard.tsv`.
+
+## Controls
+
+| Key | Action |
+|---|---|
+| W A S D | Move |
+| Arrow keys | Move |
+| Space | Pause / resume |
+| ESC | Pause and close |
+
+## Build
+
+Requires JDK 21.
+
+```bash
+gradle --no-daemon build
+```
+
+The remapped mod is written to `build/libs/neonsnake-1.0.0.jar`.
+
+GitHub Actions builds the project on pushes to `main`, pull requests, and manual workflow dispatches. The JAR is uploaded as the `neonsnake-1.0.0` workflow artifact.
+
+## Installation
+
+1. Install Fabric Loader for Minecraft 1.21.11.
+2. Install Fabric API for Minecraft 1.21.11.
+3. Put `neonsnake-1.0.0.jar` into the `.minecraft/mods` folder.
+4. Launch the Fabric profile and run `/snake`.
+
+The mod is client-side and does not need to be installed on a server.
