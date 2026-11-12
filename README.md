@@ -45,3 +45,6 @@ GitHub Actions builds the project on pushes to `main`, pull requests, and manual
 4. Launch the Fabric profile and run `/snake`.
 
 The mod is client-side and does not need to be installed on a server.
+
+
+> Build status: GitHub Actions is configured to publish the JAR as a workflow artifact after each push to `main`.
